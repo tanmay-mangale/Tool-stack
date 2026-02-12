@@ -1,0 +1,55 @@
+@font-face {
+    font-family: main;
+    src: url(../fonts/Nulshock-Bd.otf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    background-color: rgb(17,17,17);
+}
+
+@keyframes zoom {
+    from{
+        opacity: 0;
+        scale: 5;
+    }
+    to{
+        opacity: 1;
+        scale:1;
+    }
+}
+
+.Main{
+    font-family: main;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(17,17,17);
+}
+
+.Main h1{
+    font-size: 90px;
+    animation: zoom 1s ease-in-out;
+}
+
+.Container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px 180px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(17,17,17);
+}
+
+.Container p{
+    color: rgba(255, 255, 255, 0.537);
+    font-size: 20px;
+    text-align: center;
+}
